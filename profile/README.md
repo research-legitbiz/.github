@@ -1,82 +1,91 @@
 <!-- research-legitbiz/.github → profile/README.md -->
 
 ```
- _            _ _   _      _
-| | ___  __ _(_) |_| |__  (_)____
-| |/ _ \/ _` | | __| '_ \ | |_  /
-| |  __/ (_| | | |_| |_) || |/ /
-|_|\___|\__, |_|\__|_.__(_)_/___|   --research
-        |___/
+legit{biz} —research █
+
+$ ./legitbiz —research
 ```
+
+> *"we feel free because we lack the very language to articulate our unfreedom."*
+> — žižek
 
 ```console
 anon@legitbiz:~$ cat /etc/motd
 research. that's legitimate.
 ```
 
-**legit{biz} --research** is a small computer-security R&D collective. We read the
-advisories, break the thing in a lab, and write down what we learned: proof-of-concepts
-for *already-disclosed* vulnerabilities, bug bounty writeups, privacy/OPSEC tooling, and
-the occasional philosophy paper on what all of this means.
+they took the personal computer — a bicycle for the mind — and bolted it to the
+floor of a casino. hid the file system. metered the silicon. fenced off the
+commons and rented it back to you by the token.
+
+we didn't get the memo. or we got it and fed it to `strings`.
+
+legitbiz[research] reads the advisories, breaks the thing in a lab, and writes
+down what it learned. nothing more is said here. the rest is in the tools.
 
 ---
 
-### `$ ls ~/research`
-
-| dir | what lives there |
-|---|---|
-| `pocs/` | Working proof-of-concepts for publicly disclosed CVEs, built to understand the bug, not to weaponize it |
-| `writeups/` | Bug bounty reports and vuln breakdowns, published after the fix and with permission |
-| `tools/` | Open-source utilities for privacy, OPSEC, and OSINT self-audits |
-| `papers/` | Longer-form essays on security, technology, and theory |
-
 ### `$ ls ~/repos`
 
-| repo | description |
-|---|---|
-| [`unredact.tools`](https://github.com/research-legitbiz/unredact.tools) | Local-first OPSEC for files. Scans images, PDFs, Office docs, and media for GPS, serials, usernames, hidden text, and failed redactions, then writes a clean copy. |
-| [`doxxx`](https://github.com/research-legitbiz/doxxx) | Email and username footprint scanner for auditing your *own* exposure, based on upstream [`kaifcodec/user-scanner`](https://github.com/kaifcodec). |
-| [`hydra_onion`](https://github.com/research-legitbiz/hydra_onion) | THC-Hydra over Tor. Lab tooling that goes with our Hydra tutorials and upstream contributions. |
+```
+unredact.tools   your files are talking. this makes them stop.
+doxxx            find out how much of you is already out there.
+govint           the government keeps records. so can you.
+bettercapTUI     bettercap, minus the wall of typed commands.
+amass_wizard     48 data sources. one key at a time. validated.
+hydra_onion      thc-hydra, routed through the onion.
+```
 
-Other tools from members: [`govint`](https://github.com/NPCmillionaire/govint) ·
-[`openpacer`](https://github.com/NPCmillionaire/openpacer) ·
-[`foiatool`](https://github.com/NPCmillionaire/foiatool) ·
-[`cryptopastebin`](https://github.com/NPCmillionaire/cryptopastebin) ·
-[`bettercaptui`](https://github.com/NPCmillionaire/bettercaptui)
+[`unredact.tools`](https://github.com/research-legitbiz/unredact.tools) ·
+[`doxxx`](https://github.com/research-legitbiz/doxxx) ·
+[`govint`](https://github.com/research-legitbiz/govint) ·
+[`bettercapTUI`](https://github.com/research-legitbiz/bettercapTUI) ·
+[`amass_wizard`](https://github.com/research-legitbiz/amass_wizard) ·
+[`hydra_onion`](https://github.com/research-legitbiz/hydra_onion)
 
-### `$ ./vuln-breakdown --now-playing`
+### `$ cat beliefs | head`
 
-**Vuln Breakdown** is our faceless video series. It covers newly disclosed vulnerabilities
-end to end: what broke, why it broke, a terminal-first PoC walkthrough, and how to patch
-it. It's written for mid-to-advanced security and CS folks, so there's no hand-holding.
+```
+[own your tools]               no kill switches. no hostage files.
+[respect the user]             sharp tools. no welded hoods.
+[unlock the silicon]           you paid for the whole chip.
+[keep data on your own metal]  {zero telemetry}. {zero dark patterns}.
+[build for longevity]          plain text. open formats. ten years, no renewal.
+[reject the rent]              an honest tool, an honest handshake.
+```
+
+the full text lives at
+[`research.legitbiz.xyz/philosophy.txt`](https://research.legitbiz.xyz/philosophy.txt).
+plain[text]. no electron required.
 
 ### `$ whoami`
 
 ```
-NPCmillionaire   tools, PoCs, writeups          github.com/NPCmillionaire
-bodegaCat        philosophy & theory            (pen name)
-you?             see CONTRIBUTING below
+NPCmillionaire   tools, pocs, writeups
+bodegaCat        philosophy & theory     (pen name)
+you?             if you have to ask, read the rules first
 ```
 
-### `$ cat CONTRIBUTING`
+### `$ cat RULES`
 
-- We publish only **disclosed** vulns (a CVE has been assigned, a patch is out, or the vendor has signed off).
-- Bounty writeups follow the program's disclosure policy. If the program says no, we don't publish.
-- Every PoC targets a lab you own. Nothing in this org is for use against systems you aren't authorized to test.
-- Want to contribute a writeup, a tool, or a paper? Email us and send a link to your work.
-
-### `$ cat SECURITY`
-
-Found a bug in one of **our** tools? Please report it privately to
-**research@legitbiz.xyz** and don't open a public issue. We'll reply, fix it, and credit you.
+```
+[01]  disclosed vulns only. cve assigned, patch shipped, or vendor signed off.
+[02]  bounty writeups follow the program. if they say no, we say nothing.
+[03]  every poc targets a lab you own. authorized testing or nothing at all.
+[04]  bug in one of OUR tools? report it privately. we fix it, you get credit.
+```
 
 ### `$ cat /contact`
 
 ```
-web     https://research.legitbiz.xyz
-main    https://legitbiz.xyz
-mail    research@legitbiz.xyz
+web    https://research.legitbiz.xyz
+mail   research@legitbiz.xyz
+pgp    fc45 75ea af41 cb13 d15d  c722 b679 d4b2 be67 ec90
+key    https://research.legitbiz.xyz/research-legitbiz.asc
 ```
 
-<sub>Nothing here is financial or legal advice. Tools are provided as-is for education and
-authorized testing.</sub>
+> *"the passion for destruction is a creative passion, too."* — bakunin
+
+<sub>take back your stack. hack your hardware. own your data.
+the only cloud you need is the one you build.<br>
+tools provided as-is, for education and authorized testing. not legal advice. not financial advice. not advice.</sub>
